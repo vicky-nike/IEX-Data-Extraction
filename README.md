@@ -8,13 +8,13 @@ Give your date input and get all the datas in one single file.
 
 This program will also convert the numbers saved as text in excel to numerical value. Also additional Time Block column has been added. The final excel sheet will look like.
 
-![1694373195565](image/README/1694373195565.png)
+![Image](image/README/1694373195565.png "Sam ple Excel Look")
 
 ## Setup
 
 In the zip file, these are the folder and files
 
-![1694371275319](image/README/1694371275319.png)
+![Image](image/README/1694371275319.png "Zip file overview")
 
 1. Extract the zip file
 2. Requirement
@@ -74,33 +74,33 @@ Open this file with a text editor or Python IDLE (right click on the file and cl
 
 Edit the start and end date.
 
-![1694371076401](image/README/1694371076401.png)
+![Image](image/README/1694371076401.png "constant.py editor")
 
 ## Run the Program
 
 To run the program, open the folder containing all the files, and type cmd in address bar.
 
-![1694371209599](image/README/1694371209599.png)
+![Image](image/README/1694371209599.png "opening command prompt")
 
 This will open command prompt in the working folder location.
 
-![1694371224238](image/README/1694371224238.png)
+![Image](image/README/1694371224238.png "cmd overview")
 
 Type:
 
 > python main.py
 
-![1694371245141](image/README/1694371245141.png)
+![Image](image/README/1694371245141.png "running the main.py")
 
 and press enter.
 
 If the code runs successfully, it will look like this.
 
-![1694373084042](image/README/1694373084042.png)
+![Image](image/README/1694373084042.png "Output of program")
 
 The final sheet will be saved with the title of the start and end date.
 
-![1694373270404](image/README/1694373270404.png)
+![Image](image/README/1694373270404.png "final excel sheet")
 
 ## Errors
 
