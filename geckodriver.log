@@ -320,3 +320,72 @@ observe@resource://gre/modules/AsyncShutdown.sys.mjs:573:17
 console.error: "Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null\ngetMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:352:17\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:573:17\n"
 1693808542806	Marionette	INFO	Stopped listening on port 50569
 Dynamically enable window occlusion 1
+1694371401024	geckodriver	INFO	Listening on 127.0.0.1:49705
+1694371404091	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49706" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\vicky\\AppData\\Local\\Temp\\rust_mozprofileazfpk3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694371405216	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694371405481	Marionette	INFO	Listening on port 49714
+WebDriver BiDi listening on ws://127.0.0.1:49706
+Read port: 49714
+1694371405850	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49706/devtools/browser/a7d066e2-2979-4c60-871e-27b580bdc64c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.iexindia.com."
+1694371626006	Marionette	INFO	Stopped listening on port 49714
+Dynamically enable window occlusion 1
+1694371635517	geckodriver	INFO	Listening on 127.0.0.1:49788
+1694371638589	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49789" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\vicky\\AppData\\Local\\Temp\\rust_mozprofilekAzs8n"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694371639194	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694371639666	Marionette	INFO	Listening on port 49796
+WebDriver BiDi listening on ws://127.0.0.1:49789
+Read port: 49796
+1694371640166	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49789/devtools/browser/68dba612-86d6-4cac-b770-319253181324
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.iexindia.com."
+1694371887270	Marionette	INFO	Stopped listening on port 49796
+Dynamically enable window occlusion 1
+1694372403485	geckodriver	INFO	Listening on 127.0.0.1:49931
+1694372406509	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49932" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\vicky\\AppData\\Local\\Temp\\rust_mozprofilexdERfM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694372407462	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694372407727	Marionette	INFO	Listening on port 49946
+WebDriver BiDi listening on ws://127.0.0.1:49932
+Read port: 49946
+1694372408084	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49932/devtools/browser/84cb368d-6e26-401f-a996-38c6900ae9cf
+1694372437425	geckodriver	INFO	Listening on 127.0.0.1:49988
+1694372440517	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49989" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\vicky\\AppData\\Local\\Temp\\rust_mozprofile4rjQwW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694372441127	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694372441365	Marionette	INFO	Listening on port 49996
+WebDriver BiDi listening on ws://127.0.0.1:49989
+Read port: 49996
+1694372441739	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49989/devtools/browser/f6d3c839-32c6-471f-be91-e8bdfe508e9d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.iexindia.com."
+1694372657223	Marionette	INFO	Stopped listening on port 49996
+Dynamically enable window occlusion 1
+1694372662708	geckodriver	INFO	Listening on 127.0.0.1:50079
+1694372665779	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50080" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\vicky\\AppData\\Local\\Temp\\rust_mozprofilew2iHeB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694372666453	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694372666704	Marionette	INFO	Listening on port 50087
+WebDriver BiDi listening on ws://127.0.0.1:50080
+Read port: 50087
+1694372667189	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50080/devtools/browser/e8d59a1b-9038-4f8b-96dd-757dec0fb759
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.iexindia.com."
+1694372891021	Marionette	INFO	Stopped listening on port 50087
+Dynamically enable window occlusion 1

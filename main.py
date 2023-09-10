@@ -63,7 +63,7 @@ def separate_date(delivery_type, start_year, start_month, start_day, end_year, e
 
 #files_directory = glob.glob(const.directory+'*')
 
-print(os.path.abspath(os.curdir))
+#print(os.path.abspath(os.curdir))
 files_directory = const.directory
 for f in os.listdir(files_directory):
     os.remove(files_directory+'/'+f)
@@ -73,3 +73,4 @@ if delta.days < 33:
 else:
     separate_date(delivery_type, start_year, start_month, start_day, end_year, end_month, end_day)
     h_func.all_to_single(start_year, start_month, start_day, end_year, end_month, end_day)
+    print("Completed")
