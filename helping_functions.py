@@ -69,6 +69,15 @@ def check_leap_year(year):
     else:
         return 0    #not leap year
 
+def fill_time_block(x):
+    hhmm = x.split()[2].split(":")
+    to_mm = int(hhmm[0])*60 + int(hhmm[1])
+    return to_mm/15
+
+def fill_hours(x):
+    hh = x.split()[0].split(":")
+    return int(hh[0])+1
+
 def all_to_single(start_year, start_month, start_day, end_year, end_month, end_day):
     '''
     for any other location
@@ -113,7 +122,6 @@ def all_to_single(start_year, start_month, start_day, end_year, end_month, end_d
             new_table = temp_table
             iter_turn = 0
         else:
-            print(filename)
             path_excel = os.path.join(path_file, filename)
             data_excel = pd.read_excel(path_excel, header=None, index_col=False)
             temp_table = data_excel
@@ -123,9 +131,24 @@ def all_to_single(start_year, start_month, start_day, end_year, end_month, end_d
             #Selecting table except 1st, 2nd and 3rd row
             temp_table = temp_table.drop([0, 1, 2, 3], axis=0)
             new_table = pd.concat([new_table, temp_table], ignore_index=True)
-            print(new_table)
 
+    #Converting numbers as text to number format
+    header_list = new_table.iloc[0,3:].to_list()
+    for names, values in new_table.iloc[:, 3:].iteritems():
+        new_table[names] = pd.to_numeric(new_table[names], errors='coerce')
+    new_table.iloc[0, 3:] = header_list
+    #Saving to excel
     new_table.to_excel(str(start_day)+"-"+str(start_month)+"-"+str(start_year)+" to "+str(end_day)+"-"+str(end_month)+"-"+str(end_year)+'.xlsx', index=False, index_label=None, header=False)
+
+    data_excel = pd.read_excel(str(start_day)+"-"+str(start_month)+"-"+str(start_year)+" to "+str(end_day)+"-"+str(end_month)+"-"+str(end_year)+'.xlsx', index_col=False)
+    #Adding new column for Time Block
+    data_excel.insert(3, "Time Block", None)
+    #apply operation to this column
+    data_excel["Time Block"] = data_excel.iloc[:, 2].apply(lambda x: fill_time_block(x))
+
+    #fill the hours column
+    data_excel.iloc[:, 1] = data_excel.iloc[:, 2].apply(lambda x: fill_hours(x))
+    data_excel.to_excel(str(start_day)+"-"+str(start_month)+"-"+str(start_year)+" to "+str(end_day)+"-"+str(end_month)+"-"+str(end_year)+'.xlsx', index=False, index_label=None)
 
 def execute_within_year(delivery_type, start_year, start_month, start_day, end_year, end_month, end_day, leap):
     # if its not leap year

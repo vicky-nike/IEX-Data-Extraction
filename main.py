@@ -3,7 +3,6 @@ import constants as const
 from dateutil import parser
 import pandas as pd
 import os
-from os import listdir
 
 ''' GIVE YOUR INPUTS HERE '''
 delivery_type = const.delivery_type
@@ -66,7 +65,7 @@ def separate_date(delivery_type, start_year, start_month, start_day, end_year, e
 
 print(os.path.abspath(os.curdir))
 files_directory = const.directory
-for f in listdir(files_directory):
+for f in os.listdir(files_directory):
     os.remove(files_directory+'/'+f)
 
 if delta.days < 33:

@@ -1,10 +1,10 @@
-''' EDIT THIS FILE ONLY'''
-#select the delivery type
-delivery_type = "-Select Range-"
+''' EDIT THIS FILE ONLY and THIS TWO LINES ONLY'''
 #write the date in the form of MM/DD/YYYY
 start_date = "02/01/2023"
 end_date = "03/31/2023"
 
+#select the delivery type
+delivery_type = "-Select Range-"
 
 ''' Mention the location of files '''
 #webdriver_path = r"C:/Selenium"         #edit the location in this format only C:/Selenium
