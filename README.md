@@ -8,8 +8,6 @@ Give your date input and get all the datas in one single file.
 
 This program will also convert the numbers saved as text in excel to numerical value. Also additional Time Block column has been added. The final excel sheet will look like.
 
-![Image](image/README/sample_excel_look.jpg)
-
 ![Image](image/README/sample_excel_look.jpg "Sample Excel Look")
 
 ## Setup
