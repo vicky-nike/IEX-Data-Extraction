@@ -24,7 +24,7 @@ Download the zip file by clicking on "Code" and then "Download Zip".
 
 ![Image](image/github.jpg "Zip file overview")
 
-Extract the zip file to a folder.
+Extract the zip file into a folder.
 
 In the zip file, these are the folder and files
 
@@ -38,7 +38,9 @@ Double click on ***main.exe*** file. And Input the start date and press enter, a
 
 ### Output
 
-Output will look like this. The excel will be saved in the same directory with name that of the starting date and ending date.
+Output will look like this. And the application will close itself.
+
+The excel will be saved in the same directory with name that of the starting date and ending date.
 
 ![Image](image/output_of_program.jpg "constant.py editor")
 
