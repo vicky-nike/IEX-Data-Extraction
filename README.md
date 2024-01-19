@@ -24,11 +24,13 @@ Download the zip file by clicking on "Code" and then "Download Zip".
 
 ![Image](image/github.jpg "Zip file overview")
 
+Extract the zip file to a folder.
+
 In the zip file, these are the folder and files
 
 ![Image](image/zip_file_overview.jpg "Zip file overview")
 
-Double click on main.exe file. And Input the start date and press enter, and then put end date and press enter.
+Double click on ***main.exe*** file. And Input the start date and press enter, and then put end date and press enter.
 
 ![Image](image/editor.jpg "constant.py editor")
 
@@ -36,7 +38,7 @@ Double click on main.exe file. And Input the start date and press enter, and the
 
 ### Output
 
-Output will look like this
+Output will look like this. The excel will be saved in the same directory with name that of the starting date and ending date.
 
 ![Image](image/output_of_program.jpg "constant.py editor")
 
@@ -46,23 +48,21 @@ If ever a error message is shown, run the program again.
 
 ---
 
+## Extras
 
+### Python files
 
-## Python files
-
-The code is splitted into three:
+The code is splitted into Two:
 
 1. main.py
-2. extract_web.py
-3. helping_functions.py
-4. constants.py
+2. helping_functions.py
 
-### main.py
+#### main.py
 
 This is the main code that needs to be run to execute the whole program.
 
 This code will process the dates and then give this as input to other two code.
 
-### helping_functions.py
+#### helping_functions.py
 
 This code contains functions that we are using repeatedly for our task.
