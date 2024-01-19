@@ -22,6 +22,8 @@ https://github.com/vicky-nike/IEX-Data-Extraction/
 
 Download the zip file by clicking on "Code" and then "Download Zip".
 
+![Image](image/github.jpg "Zip file overview")
+
 In the zip file, these are the folder and files
 
 ![Image](image/zip_file_overview.jpg "Zip file overview")
