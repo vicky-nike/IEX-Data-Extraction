@@ -1,5 +1,6 @@
 import pandas as pd
 import json
+from io import StringIO
 import requests
 
 month_days_dict = {
@@ -15,7 +16,6 @@ month_days_dict = {
     "10": 31,
     "11": 30,
     "12": 31,
-    "2_L": 29
 }
 
 leap_month_days_dict = {
@@ -36,16 +36,19 @@ leap_month_days_dict = {
 def check_leap_year(year):
     #check if the year is leap year
     if (year % 400 == 0) and (year % 100 == 0):
+        print("Leap year")
         return 1    #leap year
 
     # not divided by 100 means not a century year
     # year divided by 4 is a leap year
     elif (year % 4 ==0) and (year % 100 != 0):
+        print("Leap year")
         return 1
 
     # if not divided by both 400 (century year) and 4 (not century year)
     # year is not leap year
     else:
+        print("Not Leap year")
         return 0    #not leap year
     
 def extract(df, start_date, end_date):
@@ -75,7 +78,8 @@ def extract(df, start_date, end_date):
     
     json_string = json.dumps(x.json(), sort_keys=True, allow_nan=False, indent = 6)
     x.close()
-    data = pd.read_json(json_string)
+    #print(json_string)
+    data = pd.read_json(StringIO(json_string))
 
     a = []
 
@@ -100,13 +104,14 @@ def extract(df, start_date, end_date):
             a[1:] = []
         a.clear()
     #print(df)
-    print(end_date)
+    print("Extracted")
     return df
 
 def execute_within_year(df, start_year, start_month, start_day, end_year, end_month, end_day, leap):
     
     # if its not leap year
     if leap == 0:
+        print("Not Leap Year")
         #iter through months
         for i in range (start_month, end_month+1, 1):
             if i==start_month:
@@ -128,11 +133,11 @@ def execute_within_year(df, start_year, start_month, start_day, end_year, end_mo
             start_date = str(s_day)+"/"+str(i)+"/"+str(start_year)
             end_date = str(e_day)+"/"+str(i)+"/"+str(end_year)
             print(start_date)
-
             df = extract(df, start_date, end_date)
     #if its leap year
     else:
         # sepearate days for feb
+        print("Leap Year")
         #iter through months
         for i in range (start_month, end_month+1, 1):
             if i==start_month:
@@ -153,7 +158,7 @@ def execute_within_year(df, start_year, start_month, start_day, end_year, end_mo
 
             start_date = str(s_day)+"/"+str(i)+"/"+str(start_year)
             end_date = str(e_day)+"/"+str(i)+"/"+str(end_year)
-            print(start_date)
+            print(start_date, " to ", end_date)
             df = extract(df, start_date, end_date)
     
     return df
