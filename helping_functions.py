@@ -78,8 +78,11 @@ def extract(df, start_date, end_date):
     
     json_string = json.dumps(x.json(), sort_keys=True, allow_nan=False, indent = 6)
     x.close()
-    #print(json_string)
-    data = pd.read_json(StringIO(json_string))
+    try:
+        data = pd.read_json(StringIO(json_string))
+    except:
+        print(json_string)
+        exit()
 
     a = []
 
