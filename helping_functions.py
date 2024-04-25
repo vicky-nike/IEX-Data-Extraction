@@ -99,8 +99,9 @@ def extract(df, start_date, end_date):
                 if MCPrice == 'Clearing_Price':
                     #print(MCPValues)
                     a.append(MCPValues)
-            #print(a)
-            df.loc[len(df)] = a
+            #print(df)
+            df = df._append(pd.Series(a, index=df.columns[:len(a)]), ignore_index=True)
+            #df.loc[len(df)] = a
             a[1:] = []
         a.clear()
     #print(df)
