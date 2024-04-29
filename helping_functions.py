@@ -136,7 +136,7 @@ def execute_within_year(df, start_year, start_month, start_day, end_year, end_mo
             
             start_date = str(s_day)+"/"+str(i)+"/"+str(start_year)
             end_date = str(e_day)+"/"+str(i)+"/"+str(end_year)
-            print(start_date)
+            print(start_date, " to ", end_date)
             df = extract(df, start_date, end_date)
     #if its leap year
     else:
